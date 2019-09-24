@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript</title>
+    <script>
+  let counter = 0;
+
+  function count() {
+      counter++;
+      document.querySelector('#counter').innerHTML = counter;
+
+      if(counter % 10 === 0 ) {
+          alert(`counter is at ${counter}`);
+      }
+  }
+
+//queryselector will use only
+    function hello(){
+        document.querySelector('h2').innerHTML = "Good bye"
+    }
+
+    //third way of learnings
+
+   
+    document.addEventListener('DOMContentLoaded', function(){
+        document.querySelector('button').onclick = sum;
+    });
+
+    let sumer = 0
+
+    function sum(){
+        sumer++ ;
+        documen.querySelector("#sumer").innerHTML = sumer;
+
+        if(sumer % 5 === 0){
+            alert(`Sumer is at ${sumer}`);
+        }
+    }
+
+
+
+
+    </script>
+</head>
+<body>
+    <h1 id="counter">wtf</h1>
+    <button onclick="count()">Adding more</button>
+
+
+    <h2>welcome</h1>
+    <button onclick="hello()">Click here!</button>
+
+    <h3 id="sumer">Learning javascript</h3>
+    <button>Click here</button>
+
+
+</body>
+</html>
